@@ -7,7 +7,7 @@
     <ProjectGuid>{8F3966B3-F8E0-42BE-84A0-4A8E54259DD5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Open_Closed_Principle</RootNamespace>
-    <AssemblyName>Open_Closed_Principle</AssemblyName>
+    <AssemblyName>Open-Closed Principle</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BadExample.cs" />
+    <Compile Include="GoodExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
