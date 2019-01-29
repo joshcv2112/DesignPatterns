@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -47,6 +48,11 @@ namespace SingleResponsibilityPrinciple
             j.AddEntry("I cried today");
             j.AddEntry("I ate a bug today");
             Console.WriteLine(j);
+
+            var p = new Persistence();
+            var filename = @"C:\Users\joshc\Desktop\journal.txt";
+            p.SaveToFile(j, filename, true);
+            Process.Start(filename);
         }
     }
 }

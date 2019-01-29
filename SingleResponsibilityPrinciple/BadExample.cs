@@ -29,6 +29,9 @@ namespace SingleResponsibilityPrinciple
             return string.Join(Environment.NewLine, entries);
         }
 
+        // This is a bad example because of all the saving and
+        // loading functionality which is happening here in Journal2
+        // should be happening in a class of its own.
         public void Save(string filename)
         {
             File.WriteAllText(filename, ToString());
