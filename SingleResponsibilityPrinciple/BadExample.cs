@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SingleResponsibilityPrinciple
 {
-    public class Journal2
+    public class JournalBad
     {
         private readonly List<string> entries = new List<string>();
 
@@ -30,16 +30,16 @@ namespace SingleResponsibilityPrinciple
         }
 
         // This is a bad example because of all the saving and
-        // loading functionality which is happening here in Journal2
+        // loading functionality which is happening here in JournalBad
         // should be happening in a class of its own.
         public void Save(string filename)
         {
             File.WriteAllText(filename, ToString());
         }
 
-        public static Journal2 Load(string filename)
+        public static JournalBad Load(string filename)
         {
-            return new Journal2();
+            return new JournalBad();
         }
 
         public void Load2(string uri)
