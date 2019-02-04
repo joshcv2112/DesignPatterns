@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnotherExample.cs" />
     <Compile Include="BadExample.cs" />
     <Compile Include="GoodExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
